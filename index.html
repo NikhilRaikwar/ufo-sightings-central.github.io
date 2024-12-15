@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛸 UFO Sightings Central 👽</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <header>
+        <h1 class="neon-text">UFO Sightings Central</h1>
+        <div class="marquee">
+            <p>🛸 BREAKING NEWS: Aliens spotted in various locations! Keep watching the skies! 👽</p>
+        </div>
+        <nav>
+            <button class="retro-button" onclick="showSection('sightings-log')">Log Sighting</button>
+            <button class="retro-button" onclick="showSection('radar')">UFO Radar</button>
+            <button class="retro-button" onclick="showSection('leaderboard')">Top Sightings</button>
+            <button class="retro-button" onclick="showSection('conspiracy')">Conspiracies</button>
+            <button class="retro-button" onclick="showSection('soundboard')">Alien Sounds</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sightings-log" class="section">
+            <h2 class="neon-text">Report Your Sighting</h2>
+            <form id="sighting-form" class="retro-form">
+                <input type="date" id="date" required>
+                <input type="text" placeholder="Location" id="location" required>
+                <select id="ufo-type" required>
+                    <option value="">Select UFO Type</option>
+                    <option value="flying-saucer">Flying Saucer</option>
+                    <option value="lights">Mysterious Lights</option>
+                    <option value="abduction">Abduction</option>
+                </select>
+                <textarea placeholder="Describe your encounter..." id="description" required></textarea>
+                <button type="submit" class="retro-button">Submit Sighting</button>
+            </form>
+        </section>
+
+        <section id="radar" class="section hidden">
+            <h2 class="neon-text">UFO Radar</h2>
+            <div class="radar-container">
+                <div class="radar-screen">
+                    <div class="radar-sweep"></div>
+                    <div id="radar-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="section hidden">
+            <h2 class="neon-text">Top Rated Sightings</h2>
+            <div id="sightings-list" class="retro-list"></div>
+        </section>
+
+        <section id="conspiracy" class="section hidden">
+            <h2 class="neon-text">Conspiracy Corner</h2>
+            <div class="conspiracy-board">
+                <form id="conspiracy-form">
+                    <textarea placeholder="Share your theory..." required></textarea>
+                    <button type="submit" class="retro-button">Post Theory</button>
+                </form>
+                <div id="conspiracy-list"></div>
+            </div>
+        </section>
+
+        <section id="soundboard" class="section hidden">
+            <h2 class="neon-text">Alien Soundboard</h2>
+            <div class="sound-grid">
+                <button class="sound-button" data-sound="ufo">UFO Zoom</button>
+                <button class="sound-button" data-sound="alien">Alien Talk</button>
+                <button class="sound-button" data-sound="beam">Beam Me Up!</button>
+            </div>
+            <audio id="ufo" src="ufo-zoom.mp3"></audio>
+            <audio id="alien" src="alien-talk.mp3"></audio>
+            <audio id="beam" src="beam-me-up.mp3"></audio>
+        </section>
+    </main>
+
+    <div id="alien-chat" class="chat-container hidden">
+        <div class="chat-header">
+            <span>👽 Alien Hotline</span>
+            <button onclick="toggleChat()" class="close-button">×</button>
+        </div>
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type your message...">
+    </div>
+
+    <div id="easter-egg" class="hidden">
+        <h2> 🎉 You found the Easter Egg! 🎉</h2>
+        <p>Congratulations! You've unlocked a special message from the aliens!</p>
+        <button onclick="closeEasterEgg()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
