@@ -18,7 +18,7 @@ Capture the fun, homebrew vibe of the early internet, when everyone had their ow
 
 ## 🌐 Live Demo
 
-You can view the live demo of the project at: [https://ufo-sightings-central.github.io](https://ufo-sightings-central.github.io)
+You can view the live demo of the project at: [https://ufo-sightings-central.github.io](https://nikhilraikwar.github.io/ufo-sightings-central.github.io/)
 
 ## 🛠️ Technologies Used
 
