@@ -22,7 +22,7 @@ You can view the live demo of the project at: [https://ufo-sightings-central.git
 
 ## 🛠️ Technologies Used
 
-- HTML
+- HTML5 
 - CSS
 - JavaScript
 - Git & GitHub
